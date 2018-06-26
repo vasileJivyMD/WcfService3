@@ -1,0 +1,38 @@
+2018-06-26 16:46:02.4028|TRACE|Client.Controllers.HomeController|
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Client.ServiceReferenceWeb.IService1.add(Int32 x, Int32 y)
+   at Client.ServiceReferenceWeb.Service1Client.add(Int32 x, Int32 y) in C:\Users\NoOne\Documents\WCF\WcfService3\Client\Connected Services\ServiceReferenceWeb\Reference.cs:line 67
+   at Client.Controllers.HomeController.Index() in C:\Users\NoOne\Documents\WCF\WcfService3\Client\Controllers\HomeController.cs:line 22
+2018-06-26 16:46:02.4418|INFO|Client.Controllers.HomeController|There was no endpoint listening at http://foo:58610/Service1.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+2018-06-26 16:46:02.4498|WARN|Client.Controllers.HomeController|System.ServiceModel.EndpointNotFoundException
+2018-06-26 16:51:27.1682|TRACE|Client.Controllers.HomeController|
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Client.ServiceReferenceWeb.IService1.add(Int32 x, Int32 y)
+   at Client.ServiceReferenceWeb.Service1Client.add(Int32 x, Int32 y) in C:\Users\NoOne\Documents\WCF\WcfService3\Client\Connected Services\ServiceReferenceWeb\Reference.cs:line 67
+   at Client.Controllers.HomeController.Index() in C:\Users\NoOne\Documents\WCF\WcfService3\Client\Controllers\HomeController.cs:line 22
+2018-06-26 16:51:27.2052|INFO|Client.Controllers.HomeController|There was no endpoint listening at http://foo:58610/Service1.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+2018-06-26 16:51:27.2132|WARN|Client.Controllers.HomeController|System.ServiceModel.EndpointNotFoundException
