@@ -11,7 +11,7 @@ namespace WcfService3
     [ServiceContract]
     public interface IService1
     {
-        [OperationContract(Action ="*")]
+        [OperationContract()]
          string Message();
         [OperationContract]
         int add(int x, int y);

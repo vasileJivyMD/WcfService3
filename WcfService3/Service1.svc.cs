@@ -17,10 +17,7 @@ namespace WcfService3
         }
         public int add(int x, int y )
         {
-            if(x == 5)
-            {
-                throw new CommunicationException("Com ex");
-            }
+            
             return x * y;
         }
     }
