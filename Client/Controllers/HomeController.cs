@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Client.ServiceReferenceWeb;
+using Client.ServiceReference1;
 using System.ServiceModel;
 using System.IO;
 using NLog;
@@ -19,9 +19,9 @@ namespace Client.Controllers
             try
             {
                 client.Open();
-                int x = client.add(5, 9);
+                var x = client.GetData(5);
                 ViewBag.X = x;
-                ViewBag.Message = client.Message();
+               // ViewBag.Message = client.Message();
                 return View();
             }
             catch (TimeoutException ex)
